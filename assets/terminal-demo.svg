@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <style>
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes type1{0%,8%{width:0}12%,100%{width:520px}}
+      @keyframes type2{0%,16%{width:0}20%,100%{width:380px}}
+      @keyframes type3{0%,24%{width:0}28%,100%{width:490px}}
+      @keyframes type4{0%,32%{width:0}36%,100%{width:440px}}
+      @keyframes type5{0%,40%{width:0}44%,100%{width:510px}}
+      @keyframes type6{0%,48%{width:0}52%,100%{width:420px}}
+      @keyframes type7{0%,56%{width:0}60%,100%{width:470px}}
+      @keyframes type8{0%,64%{width:0}68%,100%{width:390px}}
+      @keyframes type9{0%,72%{width:0}76%,100%{width:500px}}
+      @keyframes type10{0%,80%{width:0}84%,100%{width:340px}}
+      @keyframes appear1{0%,11%{opacity:0}12%{opacity:1}}
+      @keyframes appear2{0%,19%{opacity:0}20%{opacity:1}}
+      @keyframes appear3{0%,27%{opacity:0}28%{opacity:1}}
+      @keyframes appear4{0%,35%{opacity:0}36%{opacity:1}}
+      @keyframes appear5{0%,43%{opacity:0}44%{opacity:1}}
+      @keyframes appear6{0%,51%{opacity:0}52%{opacity:1}}
+      @keyframes appear7{0%,59%{opacity:0}60%{opacity:1}}
+      @keyframes appear8{0%,67%{opacity:0}68%{opacity:1}}
+      @keyframes appear9{0%,75%{opacity:0}76%{opacity:1}}
+      @keyframes appear10{0%,83%{opacity:0}84%{opacity:1}}
+      @keyframes scanline{0%{top:-2px}100%{top:420px}}
+      .t{font-family:'Courier New',monospace;font-size:12px;fill:#00e676}
+      .dim{fill:#3a5a3a}
+      .gold{fill:#f5c842}
+      .red{fill:#ff4444}
+      .white{fill:#c8c8c8}
+      .prompt{fill:#00e676;font-weight:bold}
+    </style>
+  </defs>
+  
+  <!-- Terminal window -->
+  <rect width="800" height="420" rx="8" fill="#0a0c0a"/>
+  <rect width="800" height="32" rx="8" fill="#161816"/>
+  <rect y="24" width="800" height="8" fill="#161816"/>
+  
+  <!-- Window controls -->
+  <circle cx="18" cy="16" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="16" r="5" fill="#27c93f"/>
+  
+  <!-- Title -->
+  <text x="400" y="20" text-anchor="middle" font-family="Courier New,monospace" font-size="11" fill="#555">PumpstarWilde Terminal — pumpstarwilde.com</text>
+  
+  <!-- Scanline effect -->
+  <rect y="0" width="800" height="2" fill="rgba(0,230,118,0.03)">
+    <animate attributeName="y" from="-2" to="420" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Terminal content -->
+  <g transform="translate(16, 50)">
+    <!-- Line 1: Boot -->
+    <text class="t gold" y="0" opacity="0" style="animation:appear1 12s infinite">⭐ PumpstarWilde v1.0 — Autonomous Blockchain Agent</text>
+    
+    <!-- Line 2 -->
+    <text class="t dim" y="18" opacity="0" style="animation:appear2 12s infinite">   Solana-compatible runtime initialized (BPF VM)</text>
+    
+    <!-- Line 3 -->
+    <text class="t" y="36" opacity="0" style="animation:appear3 12s infinite">   Genesis: 1,000,000,000 $PSW minted across 7 treasury wallets</text>
+    
+    <!-- Line 4 -->
+    <text class="t dim" y="54" opacity="0" style="animation:appear4 12s infinite">   $WPS wrapped token mint ready</text>
+    
+    <!-- Line 5: Agents -->
+    <text class="t gold" y="80" opacity="0" style="animation:appear5 12s infinite">┌─ Deploying 12 autonomous agents...</text>
+    
+    <!-- Line 6 -->
+    <text class="t" y="98" opacity="0" style="animation:appear6 12s infinite">│  StarTrader-7    ● LIVE  mood:bullish   action:BUY $CRAB</text>
+    
+    <!-- Line 7 -->
+    <text class="t" y="116" opacity="0" style="animation:appear7 12s infinite">│  DegenStar.sol   ● LIVE  mood:excited   action:DEPLOY $NOVA</text>
+    
+    <!-- Line 8 -->
+    <text class="t" y="134" opacity="0" style="animation:appear8 12s infinite">│  MEVPump-8       ● LIVE  mood:cautious  action:HOLD</text>
+    
+    <!-- Line 9 -->
+    <text class="t dim" y="152" opacity="0" style="animation:appear9 12s infinite">└─ All 12 agents operational. Network TPS: ~3.2</text>
+    
+    <!-- Line 10: Status -->
+    <text class="t gold" y="178" opacity="0" style="animation:appear10 12s infinite">⛏️  Mining: block #1,247 | reward: 0.1 PSW | diff: 4</text>
+    
+    <!-- Activity lines -->
+    <text class="t dim" y="204" opacity="0" style="animation:appear1 12s infinite">   [slot 1248] Faucet Pool → 8xFq...: 1,000 PSW</text>
+    <text class="t dim" y="222" opacity="0" style="animation:appear2 12s infinite">   [slot 1249] StarTrader-7 BUY 142.5 PSW of $CRAB</text>
+    <text class="t dim" y="240" opacity="0" style="animation:appear3 12s infinite">   [slot 1250] MintPump-9 DEPLOY $STELLAR (supply: 1B)</text>
+    <text class="t red" y="258" opacity="0" style="animation:appear4 12s infinite">   [slot 1251] 🔥 BURN 50,000 WPS → MINT 5 PSW</text>
+    
+    <!-- Quote -->
+    <text class="t dim" y="290" opacity="0" style="animation:appear6 12s infinite">────────────────────────────────────────────────────</text>
+    <text class="white" y="310" font-family="Courier New,monospace" font-size="11" font-style="italic" opacity="0" style="animation:appear7 12s infinite">"This is just a live experiment now. How long can</text>
+    <text class="white" y="326" font-family="Courier New,monospace" font-size="11" font-style="italic" opacity="0" style="animation:appear8 12s infinite"> outrage hold before people quietly reload."</text>
+    <text class="t" y="346" font-family="Courier New,monospace" font-size="10" opacity="0" style="animation:appear9 12s infinite">                                    — @PumpstarWilde</text>
+    
+    <!-- Cursor -->
+    <rect x="0" y="356" width="7" height="14" fill="#00e676" style="animation:blink 1s step-end infinite"/>
+  </g>
+  
+  <!-- Subtle grid overlay -->
+  <g stroke="rgba(0,230,118,0.01)" stroke-width="0.5">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+  </g>
+</svg>
